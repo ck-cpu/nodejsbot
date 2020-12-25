@@ -20,8 +20,8 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-  if(message.content === '$굴 거북왕 (거다이맥스)') {
-    message.channel.send('https://www.serebii.net/swordshield/maxraidbattles/den146.shtml');
+  if(message.content === '$샘플 목록') {
+    message.channel.send('현재 샘플은\n브리가론이(가) 있습니다. (총 1개)');
   }
 });
 
