@@ -25,4 +25,10 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$야') {
+    message.channel.send('힘들어');
+  }
+});
+
 client.login(token);
