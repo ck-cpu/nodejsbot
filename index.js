@@ -13,4 +13,16 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$봇 초대링크') {
+    message.channel.send('https://discord.com/oauth2/authorize?client_id=791929491924189204&scope=bot');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$굴 거북왕 (거다이맥스)') {
+    message.channel.send('https://www.serebii.net/swordshield/maxraidbattles/den146.shtml');
+  }
+});
+
 client.login(token);
