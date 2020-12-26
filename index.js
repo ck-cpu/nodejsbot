@@ -63,7 +63,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$이상해씨') {
-    message.channel.send('```이상해씨 フシギダネ Bulbasaur```\n전국도감: 001번\n성비: 수: 87.5 암: 12.5\n타입: 풀, 독\n특성: 심록, 엽록소\n알그룹: 괴수, 식물\n포획률: 45/220\n방어상성: 2배: 불꽃, 비행, 얼음, 에스퍼 1배: 상철, 고스트, 노말, 독, 드래곤, 땅, 바위, 벌레, 악 0.5배: 격투, 물, 전기, 페어리 0.25배: 풀\n종족치: H: 45 A: 49 B: 49 C: 65 D: 65 S: 45 합: 315\n일반 https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0001_000_mf_n_00000000_f_n.png\n이로치 https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0001_000_mf_n_00000000_f_r.png');
+    message.channel.send('```이상해씨 フシギダネ Bulbasaur```\n전국도감: 001번\n성비: 수: 87.5 암: 12.5\n타입: 풀, 독\n특성: 심록, 엽록소\n알그룹: 괴수, 식물\n포획률: 45/220\n방어상성\n2배: 불꽃, 비행, 얼음, 에스퍼\n1배: 상철, 고스트, 노말, 독, 드래곤, 땅, 바위, 벌레, 악\n0.5배: 격투, 물, 전기, 페어리\n0.25배: 풀\n종족치: H: 45 A: 49 B: 49 C: 65 D: 65 S: 45 합: 315');
   }
 });
 
