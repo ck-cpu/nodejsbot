@@ -15,7 +15,13 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$샘플 목록') {
-    message.channel.send('현재 샘플은\n라이츄, 핫삼(이)가 있습니다. (총 2개)');
+    message.channel.send('현재 샘플은\n라이츄, 핫삼, 이상해씨, 뽀록나(이)가 있습니다. (총 4개)');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$샘플 이상해씨') {
+    message.channel.send('이상해씨 @기합의띠\n성격 : 대담\n특성 : 엽록소\n개체값 : 공격 제외 5v\n노력치 : hs 252 or hd 252\n!독가루 or 맹독\n!씨뿌리기\n!방어\n!대타출동\n추가설명: 씨뿌려주고 방어>대타>대타>독가루>방어 순으로 때려준다. 이렇게만하면 한마리정도는 잡는다.');
   }
 });
 
@@ -28,6 +34,12 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$샘플 핫삼') {
     message.channel.send('핫삼 @구애머리띠 \n성격 : 고집\n특성 : 테크니션\n개체값 : 6v\n노력치 H 236 A 252 S 20\n!유턴\n!불릿펀치\n!더블윙\n!엄청난힘');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$샘플 뽀록나') {
+    message.channel.send('뽀록나 @검은진흙\n성격: 대담\n특성: 재생력\n개체값: vzvvvv\n노력치 h252 b128 d128\n!기가드레인\n!버섯포자\n!광합성\n!맹독');
   }
 });
 
