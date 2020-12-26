@@ -145,4 +145,10 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$특성 가뭄') {
+    message.channel.send('```배틀에서 꺼내면 날씨를 5턴간 쾌청으로 바꾼다.```');
+  }
+});
+
 client.login(token);
