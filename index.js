@@ -14,7 +14,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$샘플 목록') {
-    message.channel.send('현재 샘플은\n라이츄(이)가 있습니다. (총 1개)');
+    message.channel.send('현재 샘플은\n라이츄, 핫삼(이)가 있습니다. (총 1개)');
   }
 });
 
@@ -27,6 +27,12 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$야') {
     message.channel.send('힘들어');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$샘플 핫삼') {
+    message.channel.send('핫삼 @구애머리띠 \n성격 : 고집\n특성 : 테크니션\n개체값 : 6v\n노력치 H 236 A 252 S 20\n!유턴\n!불릿펀치\n!더블윙\n!엄청난힘');
   }
 });
 
