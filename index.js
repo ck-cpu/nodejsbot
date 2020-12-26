@@ -151,4 +151,16 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$메가리자몽X') {
+    message.channel.send('```메가리자몽X  Mega Charizard X```\n```전국도감: 006번```\n```성비: 수: 87.5 암: 12.5```\n```타입: 불꽃, 드래곤```\n```특성: 단단한발톱```\n```알그룹: 괴수, 드래곤```\n```방어상성\n2배: 드래곤, 땅, 바위\n1배: 격투, 고스트, 노말, 독, 물, 비행, 악, 얼음, 에스퍼, 페어리\n0.5배: 강철, 벌레, 전기\n0.25배: 불꽃, 풀```\n```종족치: H: 78 A: 130 B: 111 C: 130 D: 85 S: 100 합: 634```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 단단한발톱') {
+    message.channel.send('```접촉기의 위력이 1.3배 증가한다.```');
+  }
+});
+
 client.login(token);
