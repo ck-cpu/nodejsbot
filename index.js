@@ -4,6 +4,7 @@ const token = process.env.token;
 
 client.on('ready', () => {
   console.log('켰다.');
+  client.user.setPresence({ game: { name: '$도움을 쳐보세요!' }, status: 'online' })
 });
 
 client.on('message', (message) => {
