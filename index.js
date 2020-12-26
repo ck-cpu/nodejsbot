@@ -43,4 +43,10 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$현재 이벤트굴') {
+    message.channel.send('현재 이벤트 레이드 굴은 32번째 이벤트굴이며 대표적으로 딜리버드, 알로라 식스테일, 미로치 알로라 식스테일 (2%)가 등장합니다.\n자세한 정보는 https://www.serebii.net/swordshield/maxraidbattles/eventden-christmas2020.shtml 에서 참고해주세요!');
+  }
+});
+
 client.login(token);
