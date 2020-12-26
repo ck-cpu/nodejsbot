@@ -69,13 +69,13 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$특성 심록') {
-    message.channel.send('자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.');
+    message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
 });
 
 client.on('message', (message) => {
   if(message.content === '$특성 엽록소') {
-    message.channel.send('날씨가 쾌청 상태일 때 스피드가 2배가 된다.');
+    message.channel.send('```날씨가 쾌청 상태일 때 스피드가 2배가 된다.```');
   }
 });
 
