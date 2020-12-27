@@ -1,0 +1,107 @@
+client.on('message', (message) => {
+  if(message.content === '$특성 심록') {
+    message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 엽록소') {
+    message.channel.send('```날씨가 쾌청 상태일 때 스피드가 2배가 된다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 두꺼운지방') {
+    message.channel.send('```불꽃과 얼음 타입 공격의 데미지를 반으로 줄인다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 맹화') {
+    message.channel.send('```현재 HP가 전체 HP의 1/3일 때, 불꽃 타입 공격기의 위력이 1.5배 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 선파워') {
+    message.channel.send('```쾌청일 때 특공이 1.5배 상승하지만, 매 턴마다 체력이 1/8씩 줄어든다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 가뭄') {
+    message.channel.send('```배틀에서 꺼내면 날씨를 5턴간 쾌청으로 바꾼다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 단단한발톱') {
+    message.channel.send('```접촉기의 위력이 1.3배 증가한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 급류') {
+    message.channel.send('```자신의 현재 HP가 전체 HP의 1/3일 때, 물 타입 공격기의 위력이 1.5배 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 젖은접시') {
+    message.channel.send('```비가 내릴 때, 매 턴마다 체력의 1/16을 회복한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 메가런처') {
+    message.channel.send('```파동계 기술의 위력이 상승한다. (파동 계열 기술의 위력 1.5배, 치유파동 회복량 1.34배 증가)```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 인분') {
+    message.channel.send('```공격 기술의 추가효과를 무시한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 도주') {
+    message.channel.send('```야생 포켓몬으로부터 반드시 도망칠 수 있다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 탈피') {
+    message.channel.send('```상태 이상을 회복할 때가 있다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 복안') {
+    message.channel.send('```이 포켓몬이 사용하는 기술의 정확도가 30% 높아진다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 색안경') {
+    message.channel.send('```효과가 별로인 기술의 위력이 배로 늘어난다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 벌레의알림') {
+    message.channel.send('```이 포켓몬의 체력이 1/3이하일 시, 이 포켓몬의 벌레 타입 기술 위력이 50% 더 강해진다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 스나이퍼') {
+    message.channel.send('```공격을 상대의 급소에 명중시켰을 경우, 위력이 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 적응력') {
+    message.channel.send('```타입이 같은 기술의 위력이 올라간다.```');
+  }
+});
