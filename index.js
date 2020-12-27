@@ -373,4 +373,46 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$뿔충이') {
+    message.channel.send('```뿔충이  Weedle```\n```전국도감: 013번```\n```성비: 수: 50 암: 50```\n```타입: 벌레, 독```\n```특성: 인분, 도주```\n```알그룹: 벌레```\n```방어상성\n2배: 바위, 불꽃, 비행, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 땅, 물, 악, 얼음, 전기\n0.5배: 독, 벌레, 페어리\n0.25배: 격투, 풀```\n```종족치: H: 40 A: 35 B: 30 C: 20 D: 20 S: 50 합: 195```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$딱충이') {
+    message.channel.send('```딱충이  Kakuna```\n```전국도감: 014번```\n```성비: 수: 50 암: 50```\n```타입: 벌레, 독```\n```특성: 탈피```\n```알그룹: 벌레```\n```방어상성\n2배: 바위, 불꽃, 비행, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 땅, 물, 악, 얼음, 전기\n0.5배: 독, 벌레, 페어리\n0.25배: 격투, 풀```\n```종족치: H: 45 A: 25 B: 50 C: 25 D: 25 S: 35 합: 205```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$독침붕') {
+    message.channel.send('```독침붕  Beedrill```\n```전국도감: 015번```\n```성비: 수: 50 암: 50```\n```타입: 벌레, 독```\n```특성: 벌레의알림, 스나이퍼```\n```알그룹: 벌레```\n```방어상성\n2배: 바위, 불꽃, 비행, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 땅, 물, 악, 얼음, 전기\n0.5배: 독, 벌레, 페어리\n0.25배: 격투, 풀```\n```종족치: H: 65 A: 90 B: 40 C: 45 D: 80 S: 75 합: 395```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 벌레의알림') {
+    message.channel.send('```이 포켓몬의 체력이 1/3이하일 시, 이 포켓몬의 벌레 타입 기술 위력이 50% 더 강해진다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 스나이퍼') {
+    message.channel.send('```공격을 상대의 급소에 명중시켰을 경우, 위력이 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$메가독침붕') {
+    message.channel.send('```메가독침붕  Mega Beedrill```\n```전국도감: 015번```\n```성비: 수: 50 암: 50```\n```타입: 벌레, 독```\n```특성: 적응력```\n```알그룹: 벌레```\n```방어상성\n2배: 바위, 불꽃, 비행, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 땅, 물, 악, 얼음, 전기\n0.5배: 독, 벌레, 페어리\n0.25배: 격투, 풀```\n```종족치: H: 65 A: 150 B: 40 C: 15 D: 80 S: 145 합: 495```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 적응력') {
+    message.channel.send('```타입이 같은 기술의 위력이 올라간다.```');
+  }
+});
+
 client.login(token);
