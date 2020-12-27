@@ -325,4 +325,52 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content === '$캐터피') {
+    message.channel.send('```캐터피  Caterpie```\n```전국도감: 010번```\n```성비: 수: 50 암: 50```\n```타입: 벌레```\n```특성: 인분, 도주```\n```알그룹: 벌레```\n```방어상성\n2배: 바위, 불꽃, 비행\n1배: 강철, 고스트, 노말, 독, 드래곤, 물, 벌레, 악, 얼음, 에스퍼, 전기, 페어리\n0.5배: 격투, 땅, 풀```\n```종족치: H: 45 A: 30 B: 35 C: 20 D: 20 S: 45 합: 195```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 인분') {
+    message.channel.send('```공격 기술의 추가효과를 무시한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 도주') {
+    message.channel.send('```야생 포켓몬으로부터 반드시 도망칠 수 있다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 탈피') {
+    message.channel.send('```상태 이상을 회복할 때가 있다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$단데기') {
+    message.channel.send('```단데기  Metapod```\n```전국도감: 011번```\n```성비: 수: 50 암: 50```\n```타입: 벌레```\n```특성: 탈피```\n```알그룹: 벌레```\n```방어상성\n2배: 바위, 불꽃, 비행\n1배: 강철, 고스트, 노말, 독, 드래곤, 물, 벌레, 악, 얼음, 에스퍼, 전기, 페어리\n0.5배: 격투, 땅, 풀```\n```종족치: H: 50 A: 20 B: 55 C: 25 D: 25 S: 30 합: 205```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$버터플') {
+    message.channel.send('```버터플  Butterfree```\n```전국도감: 012번```\n```성비: 수: 50 암: 50```\n```타입: 벌레, 비행```\n```특성: 복안, 색안경```\n```알그룹: 벌레```\n```방어상성\n4배: 바위\n2배: 불꽃, 비행, 얼음, 전기\n1배: 강철, 고스트, 노말, 독, 드래곤, 물, 악, 에스퍼, 페어리\n0.5배: 벌레\n0.25배: 격투, 풀\n0배: 땅```\n```종족치: H: 60 A: 45 B: 50 C: 90 D: 80 S: 70 합: 395```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 복안') {
+    message.channel.send('```이 포켓몬이 사용하는 기술의 정확도가 30% 높아진다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 색안경') {
+    message.channel.send('```효과가 별로인 기술의 위력이 배로 늘어난다.```');
+  }
+});
+
 client.login(token);
