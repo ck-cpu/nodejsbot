@@ -152,6 +152,30 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '$구구') {
+    message.channel.send('```구구  Pidgey```\n```전국도감: 016번```\n```성비: 수: 50 암: 50```\n```타입: 노말, 비행```\n```특성: 날카로운눈, 갈지자걸음, 부풀린가슴*```\n```알그룹: 비행```\n```방어상성\n2배: 바위, 얼음, 전기\n1배: 강철, 격투, 노말, 독, 드래곤, 물, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 벌레, 풀\n0배: 고스트, 땅```\n```종족치: H: 40 A: 45 B: 40 C: 35 D: 35 S: 56 합: 251```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$피죤') {
+    message.channel.send('```피죤  Pidgeotto```\n```전국도감: 017번```\n```성비: 수: 50 암: 50```\n```타입: 노말, 비행```\n```특성: 날카로운눈, 갈지자걸음, 부풀린가슴*```\n```알그룹: 비행```\n```방어상성\n2배: 바위, 얼음, 전기\n1배: 강철, 격투, 노말, 독, 드래곤, 물, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 벌레, 풀\n0배: 고스트, 땅```\n```종족치: H: 63 A: 60 B: 55 C: 50 D: 50 S: 71 합: 349```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$피죤투') {
+    message.channel.send('```피죤투  Pidgeot```\n```전국도감: 018번```\n```성비: 수: 50 암: 50```\n```타입: 노말, 비행```\n```특성: 날카로운눈, 갈지자걸음, 부풀린가슴*```\n```알그룹: 비행```\n```방어상성\n2배: 바위, 얼음, 전기\n1배: 강철, 격투, 노말, 독, 드래곤, 물, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 벌레, 풀\n0배: 고스트, 땅```\n```종족치: H: 83 A: 80 B: 75 C: 70 D: 70 S: 101 합: 479```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$메가피죤투') {
+    message.channel.send('```메가피죤투  Mega Pidgeot```\n```전국도감: 018번```\n```성비: 수: 50 암: 50```\n```타입: 노말, 비행```\n```특성: 노가드```\n```알그룹: 비행```\n```방어상성\n2배: 바위, 얼음, 전기\n1배: 강철, 격투, 노말, 독, 드래곤, 물, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 벌레, 풀\n0배: 고스트, 땅```\n```종족치: H: 83 A: 80 B: 80 C: 135 D: 80 S: 121 합: 579```');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content === '$특성 심록') {
     message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
@@ -256,6 +280,30 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$특성 적응력') {
     message.channel.send('```타입이 같은 기술의 위력이 올라간다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 날카로운눈') {
+    message.channel.send('```상대에게 명중률이 떨어지지 않는다. 상대의 회피율을 무시한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 갈지자걸음') {
+    message.channel.send('```혼란 상태에 빠지면 회피율이 올라간다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 부풀린가슴') {
+    message.channel.send('```방어력이 떨어지지 않는다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 노가드') {
+    message.channel.send('```서로의 기술이 반드시 명중한다.```');
   }
 });
 
