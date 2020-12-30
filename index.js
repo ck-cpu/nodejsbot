@@ -4,14 +4,20 @@ const token = process.env.token;
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '$도움을 쳐보세요!' }, status: 'online' })
 });
 
-client.on('message', (message) => {
+  client.on('message', (message) => {
   if(message.content === '$봇 초대링크') {
     message.channel.send('https://discord.com/oauth2/authorize?client_id=791929491924189204&scope=bot 로 추가해주시면 감사하겠습니다.');
   }
 });
+
+message.channel.send(embed)
+} else if(message.content == '$도움') {
+  let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
+  let commandList = [
+    {name: '$(포켓몬이름)', desc: '포켓몬 정보'},
+  ];
 
 client.on('message', (message) => {
   if(message.content === '$도움') {
