@@ -200,6 +200,18 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '$깨비참') {
+    message.channel.send('```깨비참  Spearow```\n```전국도감: 021번```\n```성비: 수: 50 암: 50```\n```타입: 노말, 비행```\n```특성: 날카로운눈, 스나이퍼*```\n```알그룹: 비행```\n```방어상성\n2배: 바위, 얼음, 전기\n1배: 강철, 격투, 노말, 독, 드래곤, 물, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 벌레, 풀\n0배: 고스트, 땅```\n```종족치: H: 40 A: 60 B: 30 C: 31 D: 31 S: 70 합: 262```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$깨비드릴조') {
+    message.channel.send('```깨비드릴조  Fearow```\n```전국도감: 022번```\n```성비: 수: 50 암: 50```\n```타입: 노말, 비행```\n```특성: 날카로운눈, 스나이퍼*```\n```알그룹: 비행```\n```방어상성\n2배: 바위, 얼음, 전기\n1배: 강철, 격투, 노말, 독, 드래곤, 물, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 벌레, 풀\n0배: 고스트, 땅```\n```종족치: H: 65 A: 90 B: 65 C: 61 D: 61 S: 100 합: 442```');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content === '$특성 심록') {
     message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
@@ -297,7 +309,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$특성 스나이퍼') {
-    message.channel.send('```공격을 상대의 급소에 명중시켰을 경우, 위력이 상승한다.```');
+    message.channel.send('```급소에 명중시 1.5배가 아닌 2.25배의 피해를 준다.```');
   }
 });
 
