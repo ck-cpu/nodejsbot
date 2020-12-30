@@ -20,7 +20,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$봇 의견') {
-    message.channel.send(embed)('쿠키봇의 대한 의견은 https://discord.gg/xhPEgPenAb 이 서버의 #봇-의견 채널에서 작성해주세요.');
+    message.channel.send('쿠키봇의 대한 의견은 https://discord.gg/xhPEgPenAb 이 서버의 #봇-의견 채널에서 작성해주세요.');
   }
 });
 
