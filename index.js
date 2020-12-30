@@ -212,6 +212,36 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '$아보') {
+    message.channel.send('```아보  Ekans```\n```전국도감: 023번```\n```성비: 수: 50 암: 50```\n```타입: 독```\n```특성: 위협, 탈피, 긴장감*```\n```알그룹: 육상, 드래곤```\n```방어상성\n2배: 땅, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 물, 바위, 불꽃, 비행, 악, 얼음, 전기\n0.5배: 격투, 독, 벌레, 페어리, 풀```\n```종족치: H: 35 A: 60 B: 44 C: 40 D: 54 S: 55 합: 288```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$아보크') {
+    message.channel.send('```아보크  Arbok```\n```전국도감: 024번```\n```성비: 수: 50 암: 50```\n```타입: 독```\n```특성: 위협, 탈피, 긴장감*```\n```알그룹: 육상, 드래곤```\n```방어상성\n2배: 땅, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 물, 바위, 불꽃, 비행, 악, 얼음, 전기\n0.5배: 격투, 독, 벌레, 페어리, 풀```\n```종족치: H: 60 A: 95 B: 69 C: 65 D: 79 S: 80 합: 448```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$피카츄') {
+    message.channel.send('```피카츄  Pikachu```\n```전국도감: 025번```\n```성비: 수: 50 암: 50```\n```타입: 전기```\n```특성: 정전기, 피뢰침*```\n```알그룹: 육상, 요정```\n```방어상성\n2배: 땅\n1배: 격투, 고스트, 노말, 독, 드래곤, 물, 바위, 벌레, 불꽃, 악, 얼음, 에스퍼, 풀, 페어리\n0.5배: 전기, 비행, 강철```\n```종족치: H: 35 A: 55 B: 40 C: 50 D: 50 S: 90 합: 320```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$라이츄') {
+    message.channel.send('```라이츄  Raichu```\n```전국도감: 026번```\n```성비: 수: 50 암: 50```\n```타입: 전기```\n```특성: 정전기, 피뢰침*```\n```알그룹: 육상, 요정```\n```방어상성\n2배: 땅\n1배: 격투, 고스트, 노말, 독, 드래곤, 물, 바위, 벌레, 불꽃, 악, 얼음, 에스퍼, 풀, 페어리\n0.5배: 전기, 비행, 강철```\n```종족치: H: 60 A: 90 B: 55 C: 90 D: 80 S: 110 합: 485```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 라이츄') {
+    message.channel.send('```알로라 라이츄  Alola Raichu```\n```전국도감: 026번```\n```성비: 수: 50 암: 50```\n```타입: 전기, 에스퍼```\n```특성: 서핑테일```\n```알그룹: 육상, 요정```\n```방어상성\n2배: 고스트, 땅, 벌레, 악\n1배: 노말, 독, 드래곤, 물, 바위, 불꽃, 얼음, 페어리, 풀\n0.5배: 강철, 격투, 비행, 에스퍼, 전기```\n```종족치: H: 60 A: 85 B: 50 C: 95 D: 85 S: 110 합: 485```');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content === '$특성 심록') {
     message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
@@ -358,6 +388,36 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$특성 먹보') {
     message.channel.send('```나무열매를 일찍 먹는다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 위협') {
+    message.channel.send('```나오는 순간, 상대 포켓몬의 공격을 1랭크 내린다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 긴장감') {
+    message.channel.send('```상대 편 포켓몬이 열매류 아이템을 사용하지 못하게 한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 정전기') {
+    message.channel.send('```접촉공격을 한 포켓몬이 30% 확률로 마비상태에 빠진다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 피뢰침') {
+    message.channel.send('```더블배틀 시 전기 타입의 기술을 자신이 받고 무효화한 후, 특공이 1랭크 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 서핑테일') {
+    message.channel.send('```필드가 일렉트릭필드 상태일 때 속도가 2배가 된다.```');
   }
 });
 
