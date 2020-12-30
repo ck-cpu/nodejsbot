@@ -176,6 +176,30 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '$꼬렛') {
+    message.channel.send('```꼬렛  Rattata```\n```전국도감: 019번```\n```성비: 수: 50 암: 50```\n```타입: 노말```\n```특성: 도주, 근성, 의욕*```\n```알그룹: 육상```\n```방어상성\n2배: 격투\n1배: 강철, 노말, 독, 드래곤, 땅, 물, 바위, 벌레, 불꽃, 비행, 악, 얼음, 에스퍼, 전기, 페어리, 풀\n0배: 고스트```\n```종족치: H: 30 A: 56 B: 35 C: 25 D: 35 S: 72 합: 253```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$레트라') {
+    message.channel.send('```레트라  Raticate```\n```전국도감: 020번```\n```성비: 수: 50 암: 50```\n```타입: 노말```\n```특성: 도주, 근성, 의욕*```\n```알그룹: 육상```\n```방어상성\n2배: 격투\n1배: 강철, 노말, 독, 드래곤, 땅, 물, 바위, 벌레, 불꽃, 비행, 악, 얼음, 에스퍼, 전기, 페어리, 풀\n0배: 고스트```\n```종족치: H: 55 A: 81 B: 60 C: 50 D: 70 S: 97 합: 413```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 꼬렛') {
+    message.channel.send('``` 알로라 꼬렛  Alola Rattata```\n```전국도감: 019번```\n```성비: 수: 50 암: 50```\n```타입: 악, 노말```\n```특성: 의욕, 먹보, 두꺼운지방*```\n```알그룹: 육상```\n```방어상성\n4배: 격투\n2배: 벌레, 페어리\n1배: 강철, 노말, 독, 드래곤, 땅, 물, 바위, 볼꽃, 비행, 얼음, 전기, 풀\n0.5배: 악\n0배: 고스트, 에스퍼```\n```종족치: H: 30 A: 56 B: 35 C: 25 D: 35 S: 72 합: 253```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 레트라') {
+    message.channel.send('``` 알로라 레트라  Alola Raticate```\n```전국도감: 020번```\n```성비: 수: 50 암: 50```\n```타입: 악, 노말```\n```특성: 의욕, 먹보, 두꺼운지방*```\n```알그룹: 육상```\n```방어상성\n4배: 격투\n2배: 벌레, 페어리\n1배: 강철, 노말, 독, 드래곤, 땅, 물, 바위, 볼꽃, 비행, 얼음, 전기, 풀\n0.5배: 악\n0배: 고스트, 에스퍼```\n```종족치: H: 75 A: 71 B: 70 C: 40 D: 80 S: 77 합: 413```');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content === '$특성 심록') {
     message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
@@ -304,6 +328,24 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$특성 노가드') {
     message.channel.send('```서로의 기술이 반드시 명중한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 근성') {
+    message.channel.send('```상태이상에 걸렸다면 공격력이 1.5배 상승한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 의욕') {
+    message.channel.send('```물리공격의 위력이 50% 올라가지만 명중률이 20% 떨어진다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 먹보') {
+    message.channel.send('```나무열매를 일찍 먹는다.```');
   }
 });
 
