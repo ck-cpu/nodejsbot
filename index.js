@@ -241,6 +241,72 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '$모래두지') {
+    message.channel.send('```모래두지  Sandshrew```\n```전국도감: 027번```\n```성비: 수: 50 암: 50```\n```타입: 땅```\n```특성: 모래숨기, 모래헤치기*```\n```알그룹: 육상```\n```방어상성\n2배: 물, 얼음, 풀\n1배: 강철, 격투, 고스트, 노말, 드래곤, 땅, 벌레, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 독, 바위\n0배: 전기```\n```종족치: H: 50 A: 75 B: 85 C: 20 D: 30 S: 40 합: 300```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$고지') {
+    message.channel.send('```고지  Sandslash```\n```전국도감: 028번```\n```성비: 수: 50 암: 50```\n```타입: 땅```\n```특성: 모래숨기, 모래헤치기*```\n```알그룹: 육상```\n```방어상성\n2배: 물, 얼음, 풀\n1배: 강철, 격투, 고스트, 노말, 드래곤, 땅, 벌레, 불꽃, 비행, 악, 에스퍼, 페어리\n0.5배: 독, 바위\n0배: 전기```\n```종족치: H: 75 A: 100 B: 110 C: 45 D: 55 S: 65 합: 450```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 모래두지') {
+    message.channel.send('```알로라 모래두지  Alola Sandshrew```\n```전국도감: 026번```\n```성비: 수: 50 암: 50```\n```타입: 얼음, 강철```\n```특성: 눈숨기, 눈치우기*```\n```알그룹: 육상```\n```방어상성\n4배: 격투, 불꽃\n2배: 땅\n1배: 강철, 고스트, 물, 바위, 악, 전기\n0.5배: 노말, 드래곤, 벌레, 비행, 에스퍼, 페어리, 풀\n0.25배: 얼음\n0배: 독```\n```종족치: H: 50 A: 75 B: 90 C: 10 D: 35 S: 40 합: 300```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 고지') {
+    message.channel.send('```알로라 고지  Alola Sandslash```\n```전국도감: 027번```\n```성비: 수: 50 암: 50```\n```타입: 얼음, 강철```\n```특성: 눈숨기, 눈치우기*```\n```알그룹: 육상```\n```방어상성\n4배: 격투, 불꽃\n2배: 땅\n1배: 강철, 고스트, 물, 바위, 악, 전기\n0.5배: 노말, 드래곤, 벌레, 비행, 에스퍼, 페어리, 풀\n0.25배: 얼음\n0배: 독```\n```종족치: H: 75 A: 100 B: 120 C: 25 D: 65 S: 65 합: 450```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$니드런(수컷)') {
+    message.channel.send('```니드런(수컷)  Nidoran♀```\n```전국도감: 029번```\n```성비: 수: 0 암: 100```\n```타입: 독```\n```특성: 독가시, 투쟁심, 의욕*```\n```알그룹: 육상, 괴수```\n```방어상성\n2배: 땅, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 물, 바위, 불꽃, 비행, 악, 얼음, 전기\n0.5배: 격투, 독, 벌레, 페어리, 풀```\n```종족치: H: 55 A: 47 B: 52 C: 40 D: 40 S: 41 합: 275```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$니드리나') {
+    message.channel.send('```니드리나  Nidorina```\n```전국도감: 030번```\n```성비: 수: 0 암: 100```\n```타입: 독```\n```특성: 독가시, 투쟁심, 의욕*```\n```알그룹: 미발견```\n```방어상성\n2배: 땅, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 물, 바위, 불꽃, 비행, 악, 얼음, 전기\n0.5배: 격투, 독, 벌레, 페어리, 풀```\n```종족치: H: 70 A: 62 B: 67 C: 55 D: 55 S: 56 합: 365```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$니드퀸') {
+    message.channel.send('```니드퀸  Nidoqueen```\n```전국도감: 031번```\n```성비: 수: 0 암: 100```\n```타입: 독, 땅```\n```특성: 독가시, 투쟁심, 우격다짐*```\n```알그룹: 미발견```\n```방어상성\n2배: 땅, 물, 얼음, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 불꽃, 비행, 악, 풀\n0.5배: 격투, 바위, 벌레, 페어리\n0.25배: 독\n0배: 전기```\n```종족치: H: 90 A: 92 B: 87 C: 75 D: 85 S: 76 합: 505```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$니드런(암컷)') {
+    message.channel.send('```니드런(암컷)  Nidoran♂```\n```전국도감: 032번```\n```성비: 수: 100 암: 0```\n```타입: 독```\n```특성: 독가시, 투쟁심, 의욕*```\n```알그룹: 육상, 괴수```\n```방어상성\n2배: 땅, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 물, 바위, 불꽃, 비행, 악, 얼음, 전기\n0.5배: 격투, 독, 벌레, 페어리, 풀```\n```종족치: H: 46 A: 57 B: 40 C: 40 D: 40 S: 50 합: 273```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$니드리노') {
+    message.channel.send('```니드리노  Nidorino```\n```전국도감: 033번```\n```성비: 수: 100 암: 0```\n```타입: 독```\n```특성: 독가시, 투쟁심, 의욕*```\n```알그룹: 육상, 괴수```\n```방어상성\n2배: 땅, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 물, 바위, 불꽃, 비행, 악, 얼음, 전기\n0.5배: 격투, 독, 벌레, 페어리, 풀```\n```종족치: H: 61 A: 72 B: 57 C: 55 D: 55 S: 65 합: 365```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$니드킹') {
+    message.channel.send('```니드킹  Nidoking```\n```전국도감: 034번```\n```성비: 수: 0 암: 100```\n```타입: 독, 땅```\n```특성: 독가시, 투쟁심, 우격다짐*```\n```알그룹: 육상, 괴수```\n```방어상성\n2배: 땅, 물, 얼음, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 불꽃, 비행, 악, 풀\n0.5배: 격투, 바위, 벌레, 페어리\n0.25배: 독\n0배: 전기```\n```종족치: H: 81 A: 102 B: 77 C: 85 D: 75 S: 85 합: 505```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$삐삐') {
+    message.channel.send('```삐삐  Clefairy```\n```전국도감: 035번```\n```성비: 수: 0 암: 100```\n```타입: 독, 땅```\n```특성: 독가시, 투쟁심, 우격다짐*```\n```알그룹: 육상, 괴수```\n```방어상성\n2배: 땅, 물, 얼음, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 불꽃, 비행, 악, 풀\n0.5배: 격투, 바위, 벌레, 페어리\n0.25배: 독\n0배: 전기```\n```종족치: H: 81 A: 102 B: 77 C: 85 D: 75 S: 85 합: 505```');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content === '$특성 심록') {
     message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
@@ -380,7 +446,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$특성 의욕') {
-    message.channel.send('```물리공격의 위력이 50% 올라가지만 명중률이 20% 떨어진다.```');
+    message.channel.send('```공격은 1.5배로 증가하나 명중이 0.8배로 감소한다.```');
   }
 });
 
@@ -417,6 +483,48 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$특성 서핑테일') {
     message.channel.send('```필드가 일렉트릭필드 상태일 때 속도가 2배가 된다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 모래숨기') {
+    message.channel.send('```모래바람이 불면 회피랭크가 1 올라간다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 모래헤치기') {
+    message.channel.send('```모래바람이 불면 스피드가 2배가 된다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 눈숨기') {
+    message.channel.send('```날씨가 싸라기눈이면 회피랭크가 1 올라간다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 눈치우기') {
+    message.channel.send('```싸라기눈이 내리면 스피드가 2배가 된다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 독가시') {
+    message.channel.send('```접촉판정이 있는 공격을 한 상대를 30%의 확률로 독 상태로 만든다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 투쟁심') {
+    message.channel.send('```같은 성별의 상대에게는 기술의 위력이 25% 증가한다. 다른 성별의 상대에게는 기술의 위력이 25% 감소한다. 성별이 없는 상대에게는 기술의 위력이 변하지 않는다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 우격다짐') {
+    message.channel.send('```부가효과가 있는 기술의 위력이 증가하지만 부가효과가 발동하지 않는다.```');
   }
 });
 
