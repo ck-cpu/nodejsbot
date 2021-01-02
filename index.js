@@ -302,7 +302,13 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$삐삐') {
-    message.channel.send('```삐삐  Clefairy```\n```전국도감: 035번```\n```성비: 수: 0 암: 100```\n```타입: 독, 땅```\n```특성: 독가시, 투쟁심, 우격다짐*```\n```알그룹: 육상, 괴수```\n```방어상성\n2배: 땅, 물, 얼음, 에스퍼\n1배: 강철, 고스트, 노말, 드래곤, 불꽃, 비행, 악, 풀\n0.5배: 격투, 바위, 벌레, 페어리\n0.25배: 독\n0배: 전기```\n```종족치: H: 81 A: 102 B: 77 C: 85 D: 75 S: 85 합: 505```');
+    message.channel.send('```삐삐  Clefairy```\n```전국도감: 035번```\n```성비: 수: 25 암: 75```\n```타입: 페어리```\n```특성: 헤롱헤롱바디, 매직가드, 프렌드가드*```\n```알그룹: 요정```\n```방어상성\n2배: 강철, 독\n1배: 고스트, 노말, 땅, 물, 바위, 불꽃, 비행, 얼음, 에스퍼, 전기, 페어리, 풀\n0.5배: 격투, 벌레, 악\n0배: 드래곤```\n```종족치: H: 70 A: 45 B: 48 C: 60 D: 65 S: 35 합: 323```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$픽시') {
+    message.channel.send('```픽시  Clefable```\n```전국도감: 036번```\n```성비: 수: 25 암: 75```\n```타입: 페어리```\n```특성: 헤롱헤롱바디, 매직가드, 천진*```\n```알그룹: 요정```\n```방어상성\n2배: 강철, 독\n1배: 고스트, 노말, 땅, 물, 바위, 불꽃, 비행, 얼음, 에스퍼, 전기, 페어리, 풀\n0.5배: 격투, 벌레, 악\n0배: 드래곤```\n```종족치: H: 95 A: 70 B: 73 C: 95 D: 90 S: 60 합: 483```');
   }
 });
 
@@ -525,6 +531,30 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$특성 우격다짐') {
     message.channel.send('```부가효과가 있는 기술의 위력이 증가하지만 부가효과가 발동하지 않는다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 헤롱헤롱바디') {
+    message.channel.send('```이성의 포켓몬이 접촉판정이 있는 공격을 할 때, 30% 확률로 헤롱헤롱 상태로 만든다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 매직가드') {
+    message.channel.send('```직접 공격 이외에는 대미지를 입지 않는다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 프렌드가드') {
+    message.channel.send('```더블이나 트리플 배틀시 동료에게 공격당한 것을 25% 감소시켜준다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 천진') {
+    message.channel.send('```상대방의 랭크 변화를 무시한다.```');
   }
 });
 
