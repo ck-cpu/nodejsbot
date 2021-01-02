@@ -313,6 +313,30 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '$식스테일') {
+    message.channel.send('```식스테일  Vulpix```\n```전국도감: 037번```\n```성비: 수: 25 암: 75```\n```타입: 불꽃```\n```특성: 타오르는불꽃, 가뭄*```\n```알그룹: 육상```\n```방어상성\n2배: 땅, 물, 바위\n1배: 격투, 고스트, 노말, 독, 드래곤, 비행, 악, 에스퍼, 전기\n0.5배: 강철, 벌레, 불꽃, 얼음, 페어리, 풀```\n```종족치: H: 38 A: 41 B: 40 C: 50 D: 65 S: 65 합: 299```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$나인테일') {
+    message.channel.send('```나인테일  Ninetales```\n```전국도감: 038번```\n```성비: 수: 25 암: 75```\n```타입: 불꽃```\n```특성: 타오르는불꽃, 가뭄*```\n```알그룹: 육상```\n```방어상성\n2배: 땅, 물, 바위\n1배: 격투, 고스트, 노말, 독, 드래곤, 비행, 악, 에스퍼, 전기\n0.5배: 강철, 벌레, 불꽃, 얼음, 페어리, 풀```\n```종족치: H: 73 A: 76 B: 75 C: 81 D: 100 S: 100 합: 505```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 식스테일') {
+    message.channel.send('```알로라 식스테일  Alola Vulpix```\n```전국도감: 037번```\n```성비: 수: 25 암: 75```\n```타입: 얼음```\n```특성: 눈숨기, 눈퍼트리기*```\n```알그룹: 육상```\n```방어상성\n2배: 강철, 격투, 바위, 불꽃\n1배: 고스트, 노말, 독, 드래곤, 땅, 물, 벌레, 비행, 악, 에스퍼, 전기, 페어리, 풀\n0.5배: 얼음```\n```종족치: H: 38 A: 41 B: 40 C: 50 D: 65 S: 65 합: 299```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$알로라 나인테일') {
+    message.channel.send('```알로라 나인테일  Alola Ninetales```\n```전국도감: 038번```\n```성비: 수: 25 암: 75```\n```타입: 얼음, 페어리```\n```특성: 눈숨기, 눈퍼트리기*```\n```알그룹: 육상```\n```방어상성\n4배: 강철\n2배: 독, 바위, 불꽃\n1배: 격투, 고스트, 노말, 땅, 물, 비행, 에스퍼, 전기, 풀, 페어리\n0.5배: 벌레, 악, 얼음\n0배: 드래곤```\n```종족치: H: 73 A: 67 B: 75 C: 81 D: 100 S: 109 합: 505```');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content === '$특성 심록') {
     message.channel.send('```자신의 현재 HP가 전체의 ⅓ 이하일 때, 풀 타입 공격기의 위력이 1.5배 상승한다.```');
   }
@@ -555,6 +579,18 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content === '$특성 천진') {
     message.channel.send('```상대방의 랭크 변화를 무시한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 타오르는불꽃') {
+    message.channel.send('```불꽃 타입 공격 대미지를 무효화하고, 불꽃 타입 기술의 위력이 1.5배 증가한다.```');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '$특성 눈퍼트리기') {
+    message.channel.send('```전투에 나오면 5턴간 싸라기눈이 내린다.```');
   }
 });
 
