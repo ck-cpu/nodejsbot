@@ -9,7 +9,8 @@ client.on('ready', () => {
 if (message.content == 'embed') {
   const embed = new Discord.MessageEmbed()
   .setTitle('test')
-  .setDiscription("무")
+  .setDiscription("뭐시기")
+  .addField("뭐시기","뭐시기")
   .setColor("BLUE")
   message.channel.send(embed)
 }
