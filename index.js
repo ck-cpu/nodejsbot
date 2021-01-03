@@ -6,6 +6,13 @@ client.on('ready', () => {
   console.log('켰다.');
 });
 
+if (message.content == 'embed') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('test')
+  .setColor("BLUE")
+  message.channel.send(embed)
+}
+
   client.on('message', (message) => {
   if(message.content === '$봇 초대링크') {
     message.channel.send('https://discord.com/oauth2/authorize?client_id=791929491924189204&scope=bot 로 추가해주시면 감사하겠습니다.');
