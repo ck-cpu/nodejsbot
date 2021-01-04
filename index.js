@@ -596,7 +596,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '$공격 상승') {
-    message.channel.send('```외로움 Lonely	공격 1.1배 상승	방어 0.9배 하락\n고집 Adamant 공격 1.1배 상승 특공 0.9배 하락\n개구쟁이 Naughty 공격 1.1배 상승 특방 0.9배 하락\n용감 Brave 공격 1.1배 상승 스피드 0.9배 하락```');
+    message.channel.send('```외로움    Lonely	공격 1.1배 상승	방어 0.9배 하락\n고집 Adamant 공격 1.1배 상승 특공 0.9배 하락\n개구쟁이 Naughty 공격 1.1배 상승 특방 0.9배 하락\n용감 Brave 공격 1.1배 상승 스피드 0.9배 하락```');
   }
 });
 
