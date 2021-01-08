@@ -38,7 +38,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content === '!도배봇') {
-    message.channel.send('현재 도배봇 3, 4, 5번 봇에 보낼 수 있습니다.');
+    message.channel.send('현재 도배봇 1, 3, 4, 5번 봇에 보낼 수 있습니다.');
   }
 });
 ㅁ
