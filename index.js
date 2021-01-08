@@ -41,7 +41,7 @@ client.on('message', (message) => {
     message.channel.send('현재 도배봇 1, 3, 4, 5번 봇에 보낼 수 있습니다.');
   }
 });
-ㅁ
+
 client.on('message', (message) => {
   if(message.content === '$미싱노') {
     message.channel.send('```미싱노  MissingNo```\n```전국도감: 000번```\n```성비: 없음```\n```타입: 노말, 격투```\n```특성: 없음```\n```알그룹: 없음```\n```방어상성\n2배: 격투, 비행, 에스퍼\n1배: 노말, 독, 드래곤, 땅, 물, 불꽃, 얼음, 전기, 풀\n0.5배: 바위, 벌레\n0배: 고스트```\n```종족치: 없음```');
