@@ -25,6 +25,24 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content === '!렙작') {
+    message.channel.send('-포켓코드 도배봇 렙작 (레벨작) 안내사항-\n-렙작은 비용없이 진행하나 포켓몬 주시면 감사하겠습니다.\n-요청 문의는 dm으로 주시기 바랍니다.\n-한번에 2개 렙작은 불가능합니다.\n-레벨작 하는 시간은 주는 레벨에 따라 다르지만 최소 24시간이내에 드리도록 노력하겠습니다.\n사용해주셔서 감사합니다!');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '!레벨작') {
+    message.channel.send('-포켓코드 도배봇 렙작 (레벨작) 안내사항-\n-렙작은 비용없이 진행하나 포켓몬 주시면 감사하겠습니다.\n-요청 문의는 dm으로 주시기 바랍니다.\n-한번에 2개 렙작은 불가능합니다.\n-레벨작 하는 시간은 주는 레벨에 따라 다르지만 최소 24시간이내에 드리도록 노력하겠습니다.\n사용해주셔서 감사합니다!');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content === '!도배봇') {
+    message.channel.send('현재 도배봇 3, 4, 5번 봇에 보낼 수 있습니다.');
+  }
+});
+ㅁ
+client.on('message', (message) => {
   if(message.content === '$미싱노') {
     message.channel.send('```미싱노  MissingNo```\n```전국도감: 000번```\n```성비: 없음```\n```타입: 노말, 격투```\n```특성: 없음```\n```알그룹: 없음```\n```방어상성\n2배: 격투, 비행, 에스퍼\n1배: 노말, 독, 드래곤, 땅, 물, 불꽃, 얼음, 전기, 풀\n0.5배: 바위, 벌레\n0배: 고스트```\n```종족치: 없음```');
   }
