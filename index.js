@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', (message) => {
   if(message.content === '$이벤트') {
-    message.channel.send('이벤트는 현재 기획 중입니다.');
+    message.channel.send('```이벤트는 현재 기획 중입니다.```');
   }
 });
 
