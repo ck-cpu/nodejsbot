@@ -16,11 +16,6 @@ if (message.content == '쿠키') {
 }
 })
 client.on('message', (message) => {
-  if(message.content === 'ㅅㅂ') {
-    message.reply('봇 뮤트 @769222259154878484');
-  }
-});
-client.on('message', (message) => {
   if (message.content == '심심해') {
     const embed = new Discord.MessageEmbed() 
         .setTitle('그래?') 
