@@ -24,4 +24,13 @@ client.on('message', (message) => {
     message.channel.send(embed)
   }
   })
+  client.on('message', (message) => {
+    if (message.content == '심심해') {
+      const embed = new Discord.MessageEmbed() 
+          .setTitle('2개나올까?') 
+          .setDescription('2개나오나') 
+          .setColor('RED') 
+      message.channel.send(embed)
+    }
+    })
 client.login(token);
