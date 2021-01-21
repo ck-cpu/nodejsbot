@@ -83,7 +83,7 @@ client.on('message', (message) => {
                 const embed = new Discord.MessageEmbed() 
                     .setTitle('규칙을 읽어주세요...!') 
                     embed.setColor('#F8E77F')
-                    .setFooter(`${message.author.username}님..규칙 읽어주세요..`)
+                    .setFooter(`${message.author.username}님..규칙 읽어주세요.. 규칙은 <#798754239198658560> 채널에서 읽으시면 됩니다!`)
                 message.channel.send(embed)
               }
               })
