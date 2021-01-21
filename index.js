@@ -88,5 +88,16 @@ client.on('message', (message) => {
               }
               })
     
+              client.on('message', (message) => {
+                if (message.content == '아르세우스 개체') {
+                  const embed = new Discord.MessageEmbed() 
+                      .setTitle('level 40 Arceus | #493 | Pokémon Info') 
+                      .setDescription('**XP**: 10/4790\n**Gender**: Genderless\n**Nature**: Impish\n**HP**: 28 - 5/31\n**Attack**: 15 - 20/31\n**Defense**: 20 - 1/31\n**Sp. Atk**: 27 - 23/31\n**Sp. Def**: 20 - 12/31\n**Speed**: 18 - 5/31\n**Total** IV: 100%\n**Trainer ID**: 167996')
+                      embed.setImage("https://images-ext-2.discordapp.net/external/Ewqdsanlw6fe9P1VwEJ0BENIbFFVM_zcDkZh6IX46qo/https/pokecord.xyz%3A443/pokepic/2c477ce5c6765f3dc912a89f96f6125c%3A65d8d43a05bd7cc7b15e1e21a8508771")
+                      embed.setColor('BLACK')
+                      .setFooter(`#1041/1333 | Caught Date •2021.01.21.`)
+                  message.channel.send(embed)
+                }
+                })
 
 client.login(token);
