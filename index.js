@@ -7,10 +7,10 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
-if (message.content == '임베드') {
+if (message.content == '쿠키') {
   const embed = new Discord.MessageEmbed() 
-      .setTitle('임베드 테스트') 
-      .setDescription('https://media.discordapp.net/attachments/794941121431076885/801452569821577256/pokemon.png') 
+      .setTitle('뭐하지') 
+      .setDescription('심심해') 
       .setColor('#00ffff') 
   message.channel.send(embed)
 }
