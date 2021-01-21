@@ -60,7 +60,7 @@ client.on('message', (message) => {
             const embed = new Discord.MessageEmbed() 
                 .setTitle('쿠키는 착해요!') 
                 .setDescription('embed.setImage("https://media.discordapp.net/attachments/798201325766705193/800649608396668948/Screenshot_20210118-173939_NAVER.jpg?width=971&height=676")') 
-                .setColor('BLUE') 
+                .setColor('BLUE')
                 .setFooter(`${message.author.lastMessage} 아뭔가 안맞는데`)
             message.channel.send(embed)
           }
