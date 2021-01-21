@@ -45,4 +45,14 @@ client.on('message', (message) => {
       }
       })
 
+      client.on('message', (message) => {
+        if (message.content == '쿠키 이벤트') {
+          const embed = new Discord.MessageEmbed() 
+              .setTitle('이벤트 목록') 
+              .setDescription('아직 이벤트는 기획 중인거 같아요..') 
+              .setColor('PINK') 
+          message.channel.send(embed)
+        }
+        })
+
 client.login(token);
