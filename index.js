@@ -25,11 +25,11 @@ client.on('message', (message) => {
   }
   })
   client.on('message', (message) => {
-    if (message.content == '심심해') {
+    if (message.content == '쿠키 도움말') {
       const embed = new Discord.MessageEmbed() 
-          .setTitle('2개나올까?') 
-          .setDescription('2개나오나') 
-          .setColor('RED') 
+          .setTitle('쿠키봇 명령어 리스트입니다!') 
+          .setDescription('아직 명령어를 추가하고있어요..조금만 기다려주세요..!') 
+          .setColor('YELLOW') 
       message.channel.send(embed)
     }
     })
