@@ -55,4 +55,15 @@ client.on('message', (message) => {
         }
         })
 
+        client.on('message', (message) => {
+          if (message.content == '쿠키 너무 착해') {
+            const embed = new Discord.MessageEmbed() 
+                .setTitle('쿠키는 착해요!') 
+                .setDescription('맞아요! 쿠키는 착해용') 
+                .setColor('BLUE') 
+                .setFooter(`${message.author.lastMessage} 아뭔가 안맞는데`)
+            message.channel.send(embed)
+          }
+          })
+
 client.login(token);
