@@ -66,4 +66,16 @@ client.on('message', (message) => {
           }
           })
 
+          client.on('message', (message) => {
+            if (message.content == '아마루스 나와랏!') {
+              const embed = new Discord.MessageEmbed() 
+                  .setTitle('A wild pokemon has appeared') 
+                  .setDescription('Use p!catch <pokemon name> to catch it')
+                  embed.setImage("https://media.discordapp.net/attachments/794940998107136030/800947156798275614/pokemon.png")
+                  embed.setColor('BLUE')
+                  .setFooter(`The next pokemon will replace this one!•2021.01.21.`)
+              message.channel.send(embed)
+            }
+            })
+
 client.login(token);
