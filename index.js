@@ -28,7 +28,7 @@ client.on('message', (message) => {
     if (message.content == '쿠키 도움말') {
       const embed = new Discord.MessageEmbed() 
           .setTitle('쿠키봇 명령어 리스트입니다!') 
-          .setDescription('쿠키 도움말: 쿠키봇에 명령어를 알려줘요!쿠키 좋아하는거?: 쿠키가 좋아하는걸 알려줘요!쿠키봇에 추가했으면 하는 것을 알려주시면 감사할거같아요!  <#801742258252414986> 여기 채널에 알려주세요!!') 
+          .setDescription('쿠키 도움말: 쿠키봇에 명령어를 알려줘요!쿠키 좋아하는거?: 쿠키가 좋아하는걸 알려줘요!쿠키봇에 추가했으면 하는 것을 알려주시면 감사할거같아요!  <#801742258252414986> 여기 채널에 알려주세요!!쿠키 이벤트: 이벤트 목록을 알려줘요!') 
           .setColor('YELLOW') 
       message.channel.send(embed)
     }
