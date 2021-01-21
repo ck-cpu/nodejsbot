@@ -61,7 +61,7 @@ client.on('message', (message) => {
                 .setTitle('쿠키는 착해요!') 
                 embed.setImage("https://media.discordapp.net/attachments/799112066518089748/801794432671547442/Screenshot_20210118-173939_NAVER.png?width=971&height=676")
                 embed.setColor('BLUE')
-                .setFooter(`${message.author.lastMessage} 아뭔가 안맞는데`)
+                .setFooter(`${message.author.username} 아뭔가 안맞는데`)
             message.channel.send(embed)
           }
           })
@@ -70,10 +70,10 @@ client.on('message', (message) => {
             if (message.content == '아르세우스 나와랏!') {
               const embed = new Discord.MessageEmbed() 
                   .setTitle('야생 포켓몬이 나타났다!') 
-                  .setDescription('`p!catch <포켓몬 이름>을 통해서 잡으세요!`')
+                  .setDescription('p!catch `<포켓몬 이름>을 통해서 잡으세요!`')
                   embed.setImage("https://images-ext-2.discordapp.net/external/Ewqdsanlw6fe9P1VwEJ0BENIbFFVM_zcDkZh6IX46qo/https/pokecord.xyz%3A443/pokepic/2c477ce5c6765f3dc912a89f96f6125c%3A65d8d43a05bd7cc7b15e1e21a8508771")
                   embed.setColor('BLACK')
-                  .setFooter(`다음 포켓몬이 나타나면 잡을 수 없습니다! •2021.01.21.`)
+                  .setFooter(`다음 포켓몬이 나타나면 잡을 수 없습니다!  •2021.01.21.`)
               message.channel.send(embed)
             }
             })
