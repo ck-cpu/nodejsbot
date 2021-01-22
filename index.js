@@ -102,19 +102,20 @@ client.on('message', (message) => {
 
                 client.on('message', message => {
     
-                  let shiny = ["노로칭", "노로칭", "이로칭"]
+                  let foods = ["족발", "피자", "치킨"]
               
-                  if (message.content.startsWith(`${prefix}shiny!`)) {
-                      let rand = Math.floor(Math.random() * shiny.length);
-                      message.reply(`${shiny[rand]} ㅋㅅㅋ`);
+                  if (message.content.startsWith(`${prefix}뭐먹지`)) {
+                      let rand = Math.floor(Math.random() * foods.length);
+                      message.reply(`${foods[rand]} 어떰?`);
                   };
               
-                  if (message.content.startsWith(`${prefix}shiny!`)) {
-                      let addedshiny = message.content.split(`${prefix}ㅋㅅㅋ `)[1];
-                      shiny.push(addedshiny);
-                      message.reply(`${addedhshiny} 를 추가했습니다!`);
+                  if (message.content.startsWith(`${prefix}음식추가`)) {
+                      let addedFood = message.content.split(`${prefix}음식추가 `)[1];
+                      foods.push(addedFood);
+                      message.reply(`${addedFood} 를 추가했습니다!`);
                   };
               });
+                
                 
 
 client.login(token);
