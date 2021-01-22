@@ -119,7 +119,6 @@ client.on('message', (message) => {
                       .setDescription('이거.. 사람이냐?')
                     message.channel.send(embed)
                   };
-                
                 })
 
 client.login(token);
