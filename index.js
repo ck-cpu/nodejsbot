@@ -110,4 +110,16 @@ client.on('message', (message) => {
                     }
                 }
                 
+                client.on('message', (message) => {
+                  if(message.content == '인성') {
+                    const embed = new Discord.MessageEmbed()
+                      .setTitle('펑')
+                      embed.setColor('RED')
+                      embed.setImage ("https://www.google.com/url?sa=i&url=https%3A%2F%2Falgomas.tistory.com%2F180&psig=AOvVaw2W2n3ZHu2pGUfueXSvvk6Y&ust=1611376241959000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDUnbvaru4CFQAAAAAdAAAAABAD%22")
+                      .setDescription('이거.. 사람이냐?')
+                    message.channel.send(embed)
+                  };
+                
+                })
+
 client.login(token);
