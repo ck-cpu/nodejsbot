@@ -104,13 +104,13 @@ client.on('message', (message) => {
     
                   let foods = ["족발", "피자", "치킨"]
               
-                  if (message.content.startsWith(`${prefix}뭐먹지`)) {
+                  if (message.content.startsWith(`!뭐먹지`)) {
                       let rand = Math.floor(Math.random() * foods.length);
                       message.reply(`${foods[rand]} 어떰?`);
                   };
               
-                  if (message.content.startsWith(`${prefix}음식추가`)) {
-                      let addedFood = message.content.split(`${prefix}음식추가 `)[1];
+                  if (message.content.startsWith(`!음식추가`)) {
+                      let addedFood = message.content.split(`!음식추가 `)[1];
                       foods.push(addedFood);
                       message.reply(`${addedFood} 를 추가했습니다!`);
                   };
