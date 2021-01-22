@@ -100,25 +100,21 @@ client.on('message', (message) => {
                 }
                 })
 
-                const messages = ['message one', 'message two', 'message three', 'message four'];
-                const randomMessage = messages[Math.floor(Math.random() * (messages.length - 1))];
-                module.exports = {
-                    name: 'random',
-                    description: 'send a randomised message.',
-                    execute(message, args) {
-                        message.channel.send(randomMessage);
-                    }
-                }
-                
-                client.on('message', (message) => {
-                  if(message.content == '인성') {
-                    const embed = new Discord.MessageEmbed()
-                      .setTitle('펑')
-                      embed.setColor('RED')
-                      embed.setImage ("https://www.google.com/url?sa=i&url=https%3A%2F%2Falgomas.tistory.com%2F180&psig=AOvVaw2W2n3ZHu2pGUfueXSvvk6Y&ust=1611376241959000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDUnbvaru4CFQAAAAAdAAAAABAD%22")
-                      .setDescription('이거.. 사람이냐?')
-                    message.channel.send(embed)
+                client.on('message', message => {
+    
+                  let shiny = ["노로칭", "노로칭", "이로칭"]
+              
+                  if (message.content.startsWith(`${prefix}shiny!`)) {
+                      let rand = Math.floor(Math.random() * shiny.length);
+                      message.reply(`${shiny[rand]} ㅋㅅㅋ`);
                   };
-                })
+              
+                  if (message.content.startsWith(`${prefix}shiny!`)) {
+                      let addedshiny = message.content.split(`${prefix}ㅋㅅㅋ `)[1];
+                      shiny.push(addedshiny);
+                      message.reply(`${addedhshiny} 를 추가했습니다!`);
+                  };
+              });
+                
 
 client.login(token);
