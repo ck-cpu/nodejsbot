@@ -131,6 +131,5 @@ client.on('message', (message) => {
                     message.reply(`${addedFood} 를 추가했습니다!`);
                 };
             });
-            const request = require("request")
 
             client.login(token);
