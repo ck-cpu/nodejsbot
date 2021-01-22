@@ -100,4 +100,11 @@ client.on('message', (message) => {
                 }
                 })
 
-client.login(token);
+                if (message.content == '하이요') {
+const messages = ["바이요", "하이~", "응?", "쿠키 너무 멋져!"]
+
+const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+console.log(randomMessage)
+
+client.login(token);}
