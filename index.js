@@ -100,11 +100,23 @@ client.on('message', (message) => {
                 }
                 })
 
-                if (message.content == '하이요') {
-const messages = ["바이요", "하이~", "응?", "쿠키 너무 멋져!"]
+                // Configure the array used for random replies
+let replies = ["reply 1", "reply 2", "reply 3"];
 
-const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+// Configure the randomizer that will pick a random integer from 0 to the length of the array; used for array index
+let random = Math.floor(Math.random() * replies.length);
 
-console.log(randomMessage)
+const Discord = require("discord.js");
 
-client.login(token);}
+let replies = ["하이!", "hi!", "good!"];
+let random = Math.floor(Math.random() * 3);
+
+module.exports = {
+    name: '안녕',
+    description: "인사!",
+    execute(message, args){
+            message.channel.send(replies[random])
+    }
+}
+
+client.login(token);
