@@ -100,23 +100,14 @@ client.on('message', (message) => {
                 }
                 })
 
-                // Configure the array used for random replies
-let replies = ["reply 1", "reply 2", "reply 3"];
-
-// Configure the randomizer that will pick a random integer from 0 to the length of the array; used for array index
-let random = Math.floor(Math.random() * replies.length);
-
-const Discord = require("discord.js");
-if (message.content == '안녕') {
-let replies = ["하이!", "hi!", "good!"];
-let random = Math.floor(Math.random() * 3);
-}
-
-client.on('message', (message) => {
-  if(message.content === '안녕!') {
-    let replies = ["하이!", "hi!", "good!"];
-    let random = Math.floor(Math.random() * 3);
-  }
-});
-
+                const messages = ['message one', 'message two', 'message three', 'message four'];
+                const randomMessage = messages[Math.floor(Math.random() * (messages.length - 1))];
+                module.exports = {
+                    name: 'random',
+                    description: 'send a randomised message.',
+                    execute(message, args) {
+                        message.channel.send(randomMessage);
+                    }
+                }
+                
 client.login(token);
