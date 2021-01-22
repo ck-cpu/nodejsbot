@@ -116,20 +116,4 @@ client.on('message', (message) => {
                   };
               });
 
-              client.on('message', message => {
-    
-                let foods = ["족발", "피자", "치킨"]
-            
-                if (message.content.startsWith(`!이로치`)) {
-                    let rand = Math.floor(Math.random() * foods.length);
-                    message.reply(`${foods[rand]}`);
-                };
-            
-                if (message.content.startsWith(`!싫어추가`)) {
-                    let addedFood = message.content.split(`!ㅋ추가 `)[1];
-                    foods.push(addedFood);
-                    message.reply(`${addedFood} 를 추가했습니다!`);
-                };
-            });
-
             client.login(token);
