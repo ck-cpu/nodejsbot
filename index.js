@@ -107,16 +107,16 @@ let replies = ["reply 1", "reply 2", "reply 3"];
 let random = Math.floor(Math.random() * replies.length);
 
 const Discord = require("discord.js");
-
+if (message.content == '안녕') {
 let replies = ["하이!", "hi!", "good!"];
 let random = Math.floor(Math.random() * 3);
-
-module.exports = {
-    name: '안녕',
-    description: "인사!",
-    execute(message, args){
-            message.channel.send(replies[random])
-    }
 }
+
+client.on('message', (message) => {
+  if(message.content === '안녕!') {
+    let replies = ["하이!", "hi!", "good!"];
+    let random = Math.floor(Math.random() * 3);
+  }
+});
 
 client.login(token);
