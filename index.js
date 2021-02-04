@@ -116,4 +116,14 @@ client.on('message', (message) => {
                   };
               });
 
+              client.on('message', (message) => {
+                if (message.content == '$포스팅 치코리타') {
+                  const embed = new Discord.MessageEmbed() 
+                      .setTitle('쿠키 블로그에 이로치 치코리타 포스팅이에요!') 
+                      embed.setColor('#F8E77F')
+                      .setFooter(`${message.author.username}님이 찾으시던 이로치 치코리타 포스팅이에요! https://blog.naver.com/kevinsh525/222225733066\n이웃추가 부탁드립니다^^`)
+                  message.channel.send(embed)
+                }
+                })
+
             client.login(token);
