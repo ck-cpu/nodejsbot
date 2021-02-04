@@ -126,4 +126,21 @@ client.on('message', (message) => {
                 }
                 })
 
+                client.on('message', message => {
+    
+                  let foods = ["100트", "200트", "300트", "400트", "500트", "1000트"]
+              
+                  if (message.content.startsWith(`$물짱이 언제나와!`)) {
+                      let rand = Math.floor(Math.random() * foods.length);
+                      message.reply(`${foods[rand]}에 나옴 ㅅㄱ`);
+                  };
+              
+                  if (message.content.startsWith(`!음식추가`)) {
+                      let addedFood = message.content.split(`!음식추가 `)[1];
+                      foods.push(addedFood);
+                      message.reply(`${addedFood} 를 추가했습니다!`);
+                  };
+              });
+
+
             client.login(token);
