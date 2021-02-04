@@ -132,7 +132,7 @@ client.on('message', (message) => {
               
                   if (message.content.startsWith(`$물짱이 언제나와!`)) {
                       let rand = Math.floor(Math.random() * foods.length);
-                      message.reply(`${foods[rand]}에 나옴 ㅅㄱ`);
+                      message.channel.send(`${foods[rand]}에 나옴 ㅅㄱ`);
                   };
               
                   if (message.content.startsWith(`!음식추가`)) {
@@ -142,5 +142,20 @@ client.on('message', (message) => {
                   };
               });
 
+              client.on('message', message => {
+    
+                let foods = ["나무지기", "아차모", "물짱이", "달콤아", "레지아이스", "레지락"]
+            
+                if (message.content.startsWith(`$누가 더 빨리 나올까`)) {
+                    let rand = Math.floor(Math.random() * foods.length);
+                    message.channel.send(`${foods[rand]}가 빨리 나올 것 같음 ㅇㅇ`);
+                };
+            
+                if (message.content.startsWith(`!음식추가`)) {
+                    let addedFood = message.content.split(`!음식추가 `)[1];
+                    foods.push(addedFood);
+                    message.reply(`${addedFood} 를 추가했습니다!`);
+                };
+            });
 
             client.login(token);
