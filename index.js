@@ -148,7 +148,7 @@ client.on('message', (message) => {
             
                 if (message.content.startsWith(`$누가 더 빨리 나올까`)) {
                     let rand = Math.floor(Math.random() * foods.length);
-                    message.channel.send(`${foods[rand]}가 빨리 나올 것 같음 ㅇㅇ`);
+                    message.channel.send(`${foods[rand]}(이)가 빨리 나올 것 같음 ㅇㅇ`);
                 };
             
                 if (message.content.startsWith(`!음식추가`)) {
@@ -157,5 +157,16 @@ client.on('message', (message) => {
                     message.reply(`${addedFood} 를 추가했습니다!`);
                 };
             });
+
+            client.on('message', (message) => {
+              if (message.content == '$이로치 물짱이') {
+                const embed = new Discord.MessageEmbed() 
+                    .setTitle('이로치 물짱이의 사진') 
+                    embed.setColor('#E0709B')
+                    .setFooter(`${message.author.username}님이 찾으시던 이로치 물짱이의 사진이에요!`)
+                    embed.setImage("https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0258_000_mf_n_00000000_f_r.png")
+                message.channel.send(embed)
+              }
+              })
 
             client.login(token);
