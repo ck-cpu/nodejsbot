@@ -59,7 +59,7 @@ client.on('ready', () => {
     
                 let foods = ["https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png"]
             
-                if (message.content.startsWith(`$갸차 환상`)) {
+                if (message.content.startsWith(`$갸차 뮤`)) {
                     let rand = Math.floor(Math.random() * foods.length);
                     message.channel.send(`${foods[rand]}`);
                 };
