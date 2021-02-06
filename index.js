@@ -7,24 +7,6 @@ client.on('ready', () => {
   client.user.setPresence({ game: { name: '쿠키 도움말을 쳐보세요!' }, status: 'online' })
 });
 
-client.on('message', (message) => {
-if (message.content == '쿠키') {
-  const embed = new Discord.MessageEmbed() 
-      .setTitle('뭐하지') 
-      .setDescription('심심해') 
-      .setColor('#00ffff') 
-  message.channel.send(embed)
-}
-})
-client.on('message', (message) => {
-  if (message.content == '심심해') {
-    const embed = new Discord.MessageEmbed() 
-        .setTitle('그래?') 
-        .setDescription('나랑놀자') 
-        .setColor('RED') 
-    message.channel.send(embed)
-  }
-  })
   client.on('message', (message) => {
     if (message.content == '쿠키 도움말') {
       const embed = new Discord.MessageEmbed() 
@@ -37,7 +19,7 @@ client.on('message', (message) => {
 
     client.on('message', (message) => {
       if(message.content === '$이로치 뮤') {
-        message.reply('https://media.discordapp.net/attachments/743758949056118824/807489082351419422/52_151_.gif');
+        message.channel.send('https://media.discordapp.net/attachments/743758949056118824/807489082351419422/52_151_.gif');
       }
     });
 
@@ -61,109 +43,6 @@ client.on('message', (message) => {
           message.channel.send(embed)
         }
         })
-
-        client.on('message', (message) => {
-          if (message.content == '쿠키 너무 착해') {
-            const embed = new Discord.MessageEmbed() 
-                .setTitle('쿠키는 착해요!') 
-                embed.setImage("https://media.discordapp.net/attachments/799112066518089748/801794432671547442/Screenshot_20210118-173939_NAVER.png?width=971&height=676")
-                embed.setColor('BLUE')
-                .setFooter(`${message.author.username} 아뭔가 안맞는데`)
-            message.channel.send(embed)
-          }
-          })
-
-          client.on('message', (message) => {
-            if (message.content == '아르세우스 나와랏!') {
-              const embed = new Discord.MessageEmbed() 
-                  .setTitle('야생 포켓몬이 나타났다!') 
-                  .setDescription('p!catch `<포켓몬 이름>을 통해서 잡으세요!`')
-                  embed.setImage("https://images-ext-2.discordapp.net/external/Ewqdsanlw6fe9P1VwEJ0BENIbFFVM_zcDkZh6IX46qo/https/pokecord.xyz%3A443/pokepic/2c477ce5c6765f3dc912a89f96f6125c%3A65d8d43a05bd7cc7b15e1e21a8508771")
-                  embed.setColor('BLACK')
-                  .setFooter(`다음 포켓몬이 나타나면 잡을 수 없습니다!  •2021.01.21.`)
-              message.channel.send(embed)
-            }
-            })
-
-            client.on('message', (message) => {
-              if (message.content == '규칙') {
-                const embed = new Discord.MessageEmbed() 
-                    .setTitle('규칙을 읽어주세요...!') 
-                    embed.setColor('#F8E77F')
-                    .setFooter(`${message.author.username}님..규칙 읽어주세요.. 규칙은 <#798754239198658560> 채널에서 읽으시면 됩니다!`)
-                message.channel.send(embed)
-              }
-              })
-    
-              client.on('message', (message) => {
-                if (message.content == '아르세우스 개체') {
-                  const embed = new Discord.MessageEmbed() 
-                      .setTitle('level 40 Arceus | #493 | Pokémon Info') 
-                      .setDescription('**XP**: 10/4790\n**Gender**: Genderless\n**Nature**: Impish\n**HP**: 28 - 5/31\n**Attack**: 15 - 20/31\n**Defense**: 20 - 1/31\n**Sp. Atk**: 27 - 23/31\n**Sp. Def**: 20 - 12/31\n**Speed**: 18 - 5/31\n**Total** IV: 100%\n**Trainer ID**: 167996')
-                      embed.setImage("https://images-ext-2.discordapp.net/external/Ewqdsanlw6fe9P1VwEJ0BENIbFFVM_zcDkZh6IX46qo/https/pokecord.xyz%3A443/pokepic/2c477ce5c6765f3dc912a89f96f6125c%3A65d8d43a05bd7cc7b15e1e21a8508771")
-                      embed.setColor('BLACK')
-                      .setFooter(`#1041/1333 | Caught Date •2021.01.21.`)
-                  message.channel.send(embed)
-                }
-                })
-
-                client.on('message', message => {
-    
-                  let foods = ["족발", "피자", "치킨"]
-              
-                  if (message.content.startsWith(`!뭐먹지`)) {
-                      let rand = Math.floor(Math.random() * foods.length);
-                      message.reply(`${foods[rand]} 어떰?`);
-                  };
-              
-                  if (message.content.startsWith(`!음식추가`)) {
-                      let addedFood = message.content.split(`!음식추가 `)[1];
-                      foods.push(addedFood);
-                      message.reply(`${addedFood} 를 추가했습니다!`);
-                  };
-              });
-
-              client.on('message', (message) => {
-                if (message.content == '$포스팅 치코리타') {
-                  const embed = new Discord.MessageEmbed() 
-                      .setTitle('쿠키 블로그에 이로치 치코리타 포스팅이에요!') 
-                      embed.setColor('#F8E77F')
-                      .setFooter(`${message.author.username}님이 찾으시던 이로치 치코리타 포스팅이에요! https://blog.naver.com/kevinsh525/222225733066\n이웃추가 부탁드립니다^^`)
-                  message.channel.send(embed)
-                }
-                })
-
-                client.on('message', message => {
-    
-                  let foods = ["100트", "200트", "300트", "400트", "500트", "1000트"]
-              
-                  if (message.content.startsWith(`$물짱이 언제나와!`)) {
-                      let rand = Math.floor(Math.random() * foods.length);
-                      message.channel.send(`${foods[rand]}에 나옴 ㅅㄱ`);
-                  };
-              
-                  if (message.content.startsWith(`!음식추가`)) {
-                      let addedFood = message.content.split(`!음식추가 `)[1];
-                      foods.push(addedFood);
-                      message.reply(`${addedFood} 를 추가했습니다!`);
-                  };
-              });
-
-              client.on('message', message => {
-    
-                let foods = ["나무지기", "아차모", "물짱이", "달콤아", "레지아이스", "레지락"]
-            
-                if (message.content.startsWith(`$누가 더 빨리 나올까`)) {
-                    let rand = Math.floor(Math.random() * foods.length);
-                    message.channel.send(`${foods[rand]}(이)가 빨리 나올 것 같음 ㅇㅇ`);
-                };
-            
-                if (message.content.startsWith(`!음식추가`)) {
-                    let addedFood = message.content.split(`!음식추가 `)[1];
-                    foods.push(addedFood);
-                    message.reply(`${addedFood} 를 추가했습니다!`);
-                };
-            });
 
             client.on('message', (message) => {
               if (message.content == '$이로치 물짱이') {
