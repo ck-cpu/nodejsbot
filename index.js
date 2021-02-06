@@ -61,7 +61,7 @@ client.on('ready', () => {
             
                 if (message.content.startsWith(`$갸차 환상`)) {
                     let rand = Math.floor(Math.random() * foods.length);
-                    message.channel.send(`야생의 ${foods[rand]} (이)다!`);
+                    message.channel.send(`${foods[rand]}`);
                 };
             
                 if (message.content.startsWith(`!음식추가`)) {
