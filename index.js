@@ -170,4 +170,20 @@ client.on('message', (message) => {
               }
               })
 
+              client.on('message', message => {
+    
+                let foods = ["https://media.discordapp.net/attachments/743758949056118824/807489082351419422/52_151_.gif", "아차모", "물짱이", "달콤아", "레지아이스", "레지락"]
+            
+                if (message.content.startsWith(`$갸차 환상`)) {
+                    let rand = Math.floor(Math.random() * foods.length);
+                    message.channel.send(`야생의${foods[rand]}(이)다!`);
+                };
+            
+                if (message.content.startsWith(`!음식추가`)) {
+                    let addedFood = message.content.split(`!음식추가 `)[1];
+                    foods.push(addedFood);
+                    message.reply(`${addedFood} 를 추가했습니다!`);
+                };
+            });
+
             client.login(token);
