@@ -36,6 +36,12 @@ client.on('message', (message) => {
     })
 
     client.on('message', (message) => {
+      if(message.content === '$이로치 뮤') {
+        message.reply('https://media.discordapp.net/attachments/743758949056118824/807489082351419422/52_151_.gif');
+      }
+    });
+
+    client.on('message', (message) => {
       if (message.content == '쿠키 좋아하는거?') {
         const embed = new Discord.MessageEmbed() 
             .setTitle('저는 포켓몬 도치마론을 좋아해요!!') 
@@ -172,7 +178,7 @@ client.on('message', (message) => {
 
               client.on('message', message => {
     
-                let foods = ["https://media.discordapp.net/attachments/743758949056118824/807489082351419422/52_151_.gif", "아차모", "물짱이", "달콤아", "레지아이스", "레지락"]
+                let foods = ["나무지기", "아차모", "물짱이", "달콤아", "레지아이스", "레지락"]
             
                 if (message.content.startsWith(`$갸차 환상`)) {
                     let rand = Math.floor(Math.random() * foods.length);
