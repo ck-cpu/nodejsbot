@@ -57,7 +57,7 @@ client.on('ready', () => {
 
               client.on('message', message => {
     
-                let foods = ["https://media.discordapp.net/attachments/743758949056118824/807489082351419422/52_151_.gif", "아차모"]
+                let foods = ["https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png"]
             
                 if (message.content.startsWith(`$갸차 환상`)) {
                     let rand = Math.floor(Math.random() * foods.length);
