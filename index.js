@@ -44,59 +44,18 @@ client.on('ready', () => {
         }
         })
 
-            client.on('message', (message) => {
-              if (message.content == '$이로치 물짱이') {
-                const embed = new Discord.MessageEmbed() 
-                    .setTitle('이로치 물짱이의 사진') 
-                    embed.setColor('#E0709B')
-                    .setFooter(`${message.author.username}님이 찾으시던 이로치 물짱이의 사진이에요!`)
-                    embed.setImage("https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0258_000_mf_n_00000000_f_r.png")
-                message.channel.send(embed)
-              }
-              })
-
               client.on('message', message => {
     
-                let foods = ["https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_r.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0151_000_uk_n_00000000_f_n.png"]
-            
-                if (message.content.startsWith(`$갸차 뮤`)) {
-                    let rand = Math.floor(Math.random() * foods.length);
-                    message.channel.send(`${foods[rand]}`);
-                };
-            
-                if (message.content.startsWith(`!*@&@^dqp`)) {
-                    let addedFood = message.content.split(`!음식추가 `)[1];
-                    foods.push(addedFood);
-                    message.reply(`${addedFood} 를 추가했습니다!`);
-                };
-            });
-
-            client.on('message', message => {
-    
-              let foods = ["https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_n.png","https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0587_000_mf_n_00000000_f_r.png"]
-          
-              if (message.content.startsWith(`$갸차 에몽가`)) {
-                  let rand = Math.floor(Math.random() * foods.length);
-                  message.channel.send(`${foods[rand]}`);
-              };
-          
-              if (message.content.startsWith(`!*@&@^dqp`)) {
-                let addedFood = message.content.split(`!음식추가 `)[1];
-                foods.push(addedFood);
-                message.reply(`${addedFood} 를 추가했습니다!`);
-            };
-        });
-
-        let foods = ["라면", "피자", "치킨", "굶어"]
-if(message.content.startsWith("!음식골라")) {
-  let rand = Math.floor(Math.random() * foods.length)
-  message.channel.send(`${foods[rand]} 어떰?`)
-}
-
-if(message.content.startsWith("!음식추가")) {
-  let addedFood = message.content.split("!음식추가 ")[1]
-  foods.push(addedFood)
-  message.channel.send("추가완료 :check:")
-}
-
+                let foods = ["라면", "피자", "치킨", "굶어"]
+                if(message.content.startsWith("!음식골라")) {
+                  let rand = Math.floor(Math.random() * foods.length)
+                  message.channel.send(`${foods[rand]} 어떰?`)
+                }
+                
+                if(message.content.startsWith("!음식추가")) {
+                  let addedFood = message.content.split("!음식추가 ")[1]
+                  foods.push(addedFood)
+                  message.channel.send("추가완료 :check:")
+                }
+              })
             client.login(token);
