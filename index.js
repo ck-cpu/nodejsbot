@@ -64,7 +64,7 @@ client.on('ready', () => {
                     message.channel.send(`${foods[rand]}`);
                 };
             
-                if (message.content.startsWith(`!음식추가`)) {
+                if (message.content.startsWith(`!*@&@^dqp`)) {
                     let addedFood = message.content.split(`!음식추가 `)[1];
                     foods.push(addedFood);
                     message.reply(`${addedFood} 를 추가했습니다!`);
@@ -80,11 +80,23 @@ client.on('ready', () => {
                   message.channel.send(`${foods[rand]}`);
               };
           
-              if (message.content.startsWith(`!음식추가`)) {
-                  let addedFood = message.content.split(`!음식추가 `)[1];
-                  foods.push(addedFood);
-                  message.reply(`${addedFood} 를 추가했습니다!`);
-              };
-          });
+              if (message.content.startsWith(`!*@&@^dqp`)) {
+                let addedFood = message.content.split(`!음식추가 `)[1];
+                foods.push(addedFood);
+                message.reply(`${addedFood} 를 추가했습니다!`);
+            };
+        });
+
+        let foods = ["라면", "피자", "치킨", "굶어"]
+if(message.content.startsWith("!음식골라")) {
+  let rand = Math.floor(Math.random() * foods.length)
+  message.channel.send(`${foods[rand]} 어떰?`)
+}
+
+if(message.content.startsWith("!음식추가")) {
+  let addedFood = message.content.split("!음식추가 ")[1]
+  foods.push(addedFood)
+  message.channel.send("추가완료 :check:")
+}
 
             client.login(token);
