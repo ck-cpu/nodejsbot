@@ -44,28 +44,15 @@ client.on('ready', () => {
         }
         })
 
-        const talkedRecently = new Set();
-        if (talkedRecently.has(msg.author.id)) {
-          msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
-  } else {
-
     client.on('message', (message) => {
       if (message.content == '$교배 도치마론') {
         const embed = new Discord.MessageEmbed() 
             .setTitle('도치마론 교배 결과!') 
             .setDescription('아직 이벤트는 기획 중인거 같아요..') 
             embed.setImage('https://media.discordapp.net/attachments/791960387083960320/808302684372336700/unknown.png')
-            .setColor('PINK') 
+            .setColor('GREEN') 
         message.channel.send(embed)
       }
     })
 
-      // Adds the user to the set so that they can't talk for a minute
-      talkedRecently.add(msg.author.id);
-      setTimeout(() => {
-        // Removes the user from the set after a minute
-        talkedRecently.delete(msg.author.id);
-      }, 60000);
-  }
-
-            client.login(token);
+    client.login(token);
