@@ -44,15 +44,19 @@ client.on('ready', () => {
         }
         })
 
-    client.on('message', (message) => {
-      if (message.content == '$교배 도치마론') {
-        const embed = new Discord.MessageEmbed() 
-            .setTitle('도치마론 교배 결과!') 
-            .setDescription('아직 이벤트는 기획 중인거 같아요..') 
-            embed.setImage('https://media.discordapp.net/attachments/791960387083960320/808302684372336700/unknown.png')
-            .setColor('GREEN') 
-        message.channel.send(embed)
-      }
-    })
+        client.on('message', message => {
+    
+          let foods = ["https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/shiny-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif", "https://projectpokemon.org/images/normal-sprite/chespin.gif"]
+          if(message.content.startsWith("!음식골라")) {
+            let rand = Math.floor(Math.random() * foods.length)
+            message.channel.send(`${foods[rand]} 어떰?`)
+          }
+          
+          if(message.content.startsWith("!음식추가")) {
+            let addedFood = message.content.split("!음식추가 ")[1]
+            foods.push(addedFood)
+            message.channel.send("추가완료 :check:")
+          }
+        })
 
     client.login(token);
