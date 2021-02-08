@@ -38,7 +38,7 @@ client.on('ready', () => {
         if (message.content == '쿠키 이벤트') {
           const embed = new Discord.MessageEmbed() 
               .setTitle('이벤트 목록') 
-              .setDescription('아직 이벤트는 기획 중인거 같아요..') 
+              .setDescription('현재 $교배 도치마론 커맨드를 입력하면 약 1/60 확률로 이로치 도치마론이 등장!') 
               .setColor('PINK') 
           message.channel.send(embed)
         }
