@@ -134,20 +134,4 @@ client.on('ready', () => {
           }
         })
 
-        client.on('message', message => {
-    
-          let foods = ["강아지는 귀엽지?","아니 안귀여운데"]
-          if(message.content.startsWith("$강아지는 귀여워")) {
-            let rand = Math.floor(Math.random() * foods.length)
-            message.channel.send(`${foods[rand]}`)
-          }
-          
-          let a = "!음식추가 피자"
-          console.log(a.split("!음식추가 "))
-          // ["", "피자"]
-            foods.push(addedFood)
-            message.channel.send("추가완료 :check:")
-          }
-        )
-
     client.login(token);
