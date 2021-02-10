@@ -133,4 +133,9 @@ client.on('ready', () => {
           }
         })
 
+        if(message.content.startsWith('!공지')) {
+          let content = message.content.slice('!공지 '.length)
+          client.channels.cache.get(789058016292896831).send(content)
+      }
+
     client.login(token);
