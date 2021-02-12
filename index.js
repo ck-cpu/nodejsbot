@@ -177,4 +177,4 @@ client.on('ready', () => {
             message.channel.send("추가완료 :check:")
           }
         
-    client.login(token);})
+    client.login(token);
