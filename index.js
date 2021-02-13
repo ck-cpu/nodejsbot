@@ -187,4 +187,17 @@ client.on('ready', () => {
           }
         })
 
+    client.on('message', (message) => {
+      if (message.content == '$샘플 번치코') {
+        const embed = new Discord.MessageEmbed() 
+            .setTitle('번치코의 샘플음 총 2개가 있어요!') 
+            .setDescription('1. 생명의구슬 번치코 샘플 \n 2. 기합의띠 번치코 샘플') 
+            .setColor('RED') 
+            .setFooter(`${message.author.username}님! $(포켓몬이름) (번호)를 쓰시면 샘플을 확인하실 수 있어요!`)
+        message.channel.send(embed)
+      }
+      })
+
+
+
     client.login(token);
