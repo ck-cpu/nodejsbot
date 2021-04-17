@@ -11,8 +11,8 @@ client.on('message', (message) => {
         if (message.content == '$교배 커맨드') {
           const embed = new Discord.MessageEmbed() 
               .setTitle('현재 교배 가능 포켓몬') 
-              .setDescription('도치마론, 푸호꼬, 개구마르, 치코리타, 브케인, 리아코, 파치리스, 뮤, 세레비, 지라치') 
-              .setColor('BLUE') 
+              .setDescription('**1세대**: 뮤 | **2세대**: 치코리타, 브케인, 리아코, 세레비 | **3세대**: 나무지기, 아차모, 물짱이, 지라치 | **4세대**: 모부기, 불꽃숭이, 팽도리, 파치리스 \n **5세대**: 없음 | **6세대**: 도치마론, 푸호꼬, 개구마르 | **7세대**: 없음 | **8세대**: 없음') 
+              .setColor('#F8E77F') 
           message.channel.send(embed)
         }
         })
