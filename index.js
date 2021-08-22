@@ -41,4 +41,15 @@ client.on('message', (message) => {
         }
         })
 
+        client.on('message', (message) => {
+          if (message.content == '%레이드 꼬링크 이로치') {
+            const embed = new Discord.MessageEmbed() 
+                .setTitle('**Raid announcement**') 
+                .setDescription('New raid will start in 15 minutes!\nWill you defeat **Shinx?**')
+                .setImage('http://play.pokemonshowdown.com/sprites/ani-shiny/shinx.gif')
+                .setColor('#000000') 
+            message.channel.send(embed)
+          }
+          })
+
   client.login(token);
