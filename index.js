@@ -60,7 +60,7 @@ client.on('message', (message) => {
                   .setDescription('New raid will start in 15 minutes!\nWill you defeat **Registeel :sparkles:?**')
                   .setImage('http://play.pokemonshowdown.com/sprites/ani-shiny/registeel.gif')
                   .setColor('#FFFF00') 
-                  .setFooter('오늘 오후 11:42')
+                  .setFooter('오늘 오후 11:26')
               message.channel.send(embed)
             }
             })
