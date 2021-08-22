@@ -57,9 +57,9 @@ client.on('message', (message) => {
             if (message.content == '%레이드 레지스틸 이로치') {
               const embed = new Discord.MessageEmbed() 
                   .setTitle('**Raid announcement**') 
-                  .setDescription('New raid will start in 15 minutes!\nWill you defeat **Registeel?**')
+                  .setDescription('New raid will start in 15 minutes!\nWill you defeat **Registeel :sparkles:?**')
                   .setImage('http://play.pokemonshowdown.com/sprites/ani-shiny/registeel.gif')
-                  .setColor('#616264') 
+                  .setColor('#FFFF00') 
                   .setFooter('오늘 오후 11:42')
               message.channel.send(embed)
             }
